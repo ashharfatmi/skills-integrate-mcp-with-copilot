@@ -24,6 +24,19 @@ header {
   border-radius: 5px;
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.header-content button {
+  background-color: #c6ff00;
+  color: #172016;
+}
+
 header h1 {
   margin-bottom: 10px;
 }
@@ -55,6 +68,30 @@ section h3 {
   padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
   color: #1a237e;
+}
+
+dialog {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  padding: 24px;
+  width: min(100% - 40px, 400px);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.dialog-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+#teacher-only-message {
+  color: #666;
+  margin-bottom: 20px;
 }
 
 .activity-card {
